@@ -1,0 +1,20 @@
+<nav class="u-background">
+  <div class="u-wrapper">
+    <ul class="Banner">
+      <li class="Banner-item Banner-item--title">
+        <a class="Banner-link u-clickable" href="{{ relURL nil }}">{{ site.Title }}</a>
+      </li>
+      {{ range site.Menus.nav }}
+          {{ if lt .Weight 0 }}
+            <li class="Banner-item">
+              <a class="Banner-link u-clickable" href="{{ relURL .URL }}" >{{ .Name }}</a>
+            </li>
+          {{else}}
+            <li class="Banner-item">
+              <a class="Banner-link u-clickable" href="{{ relURL .URL }}" target="_blank">{{ .Name }}</a>
+            </li>
+          {{end}}
+      {{ end }}
+    </ul>
+  </div>
+</nav>

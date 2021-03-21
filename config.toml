@@ -1,0 +1,70 @@
+baseURL = ""
+languageCode = "en-us"
+title = "LewisLevin.com"
+theme = "flex-master"
+paginate        = 12
+# SectionPagesMenu = "main"
+# mainSections = ["post"]
+canonifyurls    = true
+publishDir      = ""
+relativeURLs    = true
+
+[params]
+  description    = "Blogs and websites"
+#   cover_image = "/images/2018/06/2013-12-27-16.41.42.jpg"
+  copyright   = "© 2021"
+  pageNotFoundTitle = "404 - Page not found"
+  color = "teal"           # Any color in CSS syntax
+  width = "42rem"          # Any length in CSS syntax
+  footer = ""
+  rss = ""
+  summaries = false      # Set to true to show summaries of posts on homepage
+  divider = false
+  schema = false         # Set to true to add Schema.org metadata
+  opengraph = false      # Set to true to add Open Graph metadata
+  twittercards = false   # Set to true to add Twitter Cards metadata
+
+# [permalinks]
+#   post = "/post/:slug/"
+
+# [taxonomies]
+#   tag = "tags"
+#   category = "categories"
+#   author = "author"  
+
+[[menu.nav]]
+    name = "Winter Cove"
+    url = "https://www.wintercove.org/"
+
+[[menu.nav]]
+    name = "Travelogues"
+    url = "https://a-view.org"
+
+[[menu.nav]]
+    name = "Photos"
+    url = "https://photos.lewislevin.com"
+
+  [[menu.nav]]
+    name = "About"
+    url = "extras/about"
+    weight = "-100"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.parser]
+      attribute = true
+      autoHeadingID = true
+      autoHeadingIDType = "github"
+    [markup.goldmark.renderer]
+      hardWraps = false
+      unsafe = true
+      xhtml = false
+
