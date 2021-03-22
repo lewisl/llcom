@@ -1,4 +1,4 @@
-baseURL = "https://lewislevin-com.onrender.com"
+baseURL = "https://lewislevin-com.onrender.com/"
 languageCode = "en-us"
 title = "LewisLevin.com"
 theme = "flex-master"
@@ -43,10 +43,10 @@ relativeURLs    = true
     name = "Photos"
     url = "https://photos.lewislevin.com"
 
-[[menu.nav]]
-    name = "About"
-    url = "/posts/about/"
-    weight = "-100"
+# [[menu.nav]]
+#     name = "About"
+#     url = "/about/"
+#     weight = "-100"
 
 [markup]
   [markup.goldmark]

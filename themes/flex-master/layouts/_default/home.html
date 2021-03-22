@@ -26,28 +26,33 @@
 
   {{ $paginator := .Scratch.Get "paginator" }}
 
-  {{ range $paginator.Pages }}
-    <article>
-      {{ partial "heading.html" . }}
-      {{ if site.Params.summaries }}
-        {{ .Summary }}
-        {{ if .Truncated }}
-          <p>
-            <a class="u-clickable" href="{{ .RelPermalink }}">Read More…</a>
-          </p>
+  {{ .Content }}
+
+  {{ range $paginator.Pages }} <!-- This loop only runs if there are posts -->
+
+      <hr>
+      <h1>Recent Updates</h1>
+
+      <article>
+        {{ partial "heading.html" . }}
+        {{ if site.Params.summaries }}
+          {{ .Summary }}
+          {{ if .Truncated }}
+            <p>
+              <a class="u-clickable" href="{{ .RelPermalink }}">Read More…</a>
+            </p>
+          {{ end }}
+        {{ else }}
+          {{ .Content }}
         {{ end }}
-      {{ else }}
-        {{ .Content }}
+        {{ partial "tags.html" . }}
+      </article>
+      {{ with site.Params.divider }}
+        <div class="Divider"></div>
       {{ end }}
-      {{ partial "tags.html" . }}
-    </article>
-    {{ with site.Params.divider }}
-      <div class="Divider"></div>
-    {{ end }}
+
   {{ end }}
 
   {{ partial "pagination.html" . }}
-
-  {{ .Content }}
 
 {{ end }}

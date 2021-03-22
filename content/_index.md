@@ -4,6 +4,8 @@ title = "Blogs and Websites"
 date = "03-19-2021"
 +++
 
+This is a guide to other blogs. Just click one on the menu above or below:
+
 <b><a href="https://photos.lewislevin.com" target="_blank">Photos</a>  is a link to galleries of many of my photos.</b>
 
 <b><a href="https://a-view.org" target="_blank">Travelogues</a>  is a link to travelogues of our fun trips.</b> We have made an RV trip across America. We have ridden bikes across America. We have ridden bikes down the Atlantic coast of Florida. We lived in Amsterdam for 2 months. I toured Iceland and Scotland with a good friend. I toured Israel with the New Israel Fund.
