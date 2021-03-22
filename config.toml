@@ -43,7 +43,7 @@ relativeURLs    = true
     name = "Photos"
     url = "https://photos.lewislevin.com"
 
-  [[menu.nav]]
+[[menu.nav]]
     name = "About"
     url = "/posts/about/"
     weight = "-100"
