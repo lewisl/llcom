@@ -1,4 +1,4 @@
-baseURL = ""
+baseURL = "https://lewislevin-com.onrender.com"
 languageCode = "en-us"
 title = "LewisLevin.com"
 theme = "flex-master"
@@ -6,12 +6,10 @@ paginate        = 12
 # SectionPagesMenu = "main"
 # mainSections = ["post"]
 canonifyurls    = true
-publishDir      = ""
 relativeURLs    = true
 
 [params]
   description    = "Blogs and websites"
-#   cover_image = "/images/2018/06/2013-12-27-16.41.42.jpg"
   copyright   = "© 2021"
   pageNotFoundTitle = "404 - Page not found"
   color = "teal"           # Any color in CSS syntax
@@ -25,7 +23,8 @@ relativeURLs    = true
   twittercards = false   # Set to true to add Twitter Cards metadata
 
 # [permalinks]
-#   post = "/post/:slug/"
+#   posts = "/:filename/"
+#   pages = "/:filename/"
 
 # [taxonomies]
 #   tag = "tags"
@@ -46,7 +45,7 @@ relativeURLs    = true
 
   [[menu.nav]]
     name = "About"
-    url = "extras/about"
+    url = "/posts/about/"
     weight = "-100"
 
 [markup]
